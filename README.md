@@ -1,3 +1,54 @@
+🎬 Netflix Clone
+
+A fully functional, modern Netflix Clone built with React, Firebase, and Styled Components — complete with user authentication, dynamic movie listings via the TMDB API, and a sleek UI.
+
+Inspired by Sonny Sangha’s Netflix Clone Tutorial
+
+⸻
+
+🚀 Features
+	•	🔐 User Authentication with Firebase (sign up, login, logout)
+	•	🎞️ Browse Movies & TV Shows using TMDB API
+	•	💾 Add to Favourites functionality
+	•	🎨 Responsive UI styled with Styled Components
+	•	🔍 Movie Previews & Details
+	•	📱 Mobile-First Design
+
+⸻
+
+🛠 Tech Stack
+	•	Frontend: React, Styled Components, React Router
+	•	Backend / Auth: Firebase Auth & Firestore
+	•	API: TMDB (The Movie Database)
+	•	Hosting: Firebase Hosting
+
+✅ To-Do / Enhancements
+	•	Add search functionality
+	•	Add trailer previews via YouTube API
+	•	Improve loading skeletons
+	•	Add profile avatars
+	•	Better error handling for API requests
+
+⸻
+
+🧠 Lessons Learned
+	•	Implementing Firebase authentication and Firestore integration
+	•	Working with REST APIs (TMDB)
+	•	Component-based architecture in React
+	•	Deploying apps with Firebase Hosting
+
+📜 License
+
+This project is for educational purposes. All movie data & images are provided by TMDB.
+
+⸻
+
+🙌 Acknowledgments
+	•	Sonny Sangha for the awesome tutorial
+	•	TMDB for the movie data
+	•	Firebase for backend services
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.

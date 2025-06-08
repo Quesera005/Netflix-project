@@ -30,13 +30,14 @@ function Row({title, fetchUrl, isLargeRow=false}) {
 
             { movies.map( /*For every movies, return the image */
                 (movie) =>
+                //check to prevent an errolink popup
                 ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path)) && (
 
                     <img 
                         className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                         key={movie.id}
                         src={`${base_url}${
-                            //two images are returned on the request. For the rows we use movies poster
+                            //two images are returned on the request. For the rows we use movies backdrop and original we use movie poster
                             isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`} 
                 alt={movie.name}

@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import './LoginScreen.css'
 import SignupScreen from './SignUpScreen';
 
+
 function LoginScreen() {
     const [signIn, setSignIn]= useState(false);
 
-
+    //use hooks for when a user logs in
   return (
     <div className="loginScreen">
         
@@ -21,13 +22,14 @@ function LoginScreen() {
 
        <div className="loginScreen__body">
         {signIn ? (<SignupScreen/>
-        ): (
+        ): ( 
             <>
             <h1> Unlimited films, TV programmes and more</h1>
             <h2>Watch anywhere. Cancel at any time.</h2>
             <h3>Ready to watch? Enter your email address or restart your membership.</h3>
 
             <div className="loginScreen__input">
+                {/*For user to sign up or register(will take them to signuo screen)*/}
                 <form>
                     <input type="email" placeholder="Email Address"/>
                     <button 

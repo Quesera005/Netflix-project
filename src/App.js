@@ -22,7 +22,7 @@ function App() {
           //logged in
           dispatch(login({
             uid: userAuth.uid,
-            email:userAuth.email
+            email:userAuth.email //current user and email
           }));
       }
         else{
