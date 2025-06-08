@@ -1,3 +1,5 @@
+//API to retrieve the netflix images for the movie genres
+
 const API_KEY = process.env.REACT_APP_REQUEST_API_KEY ;
 
 const requests ={

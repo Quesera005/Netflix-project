@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import {useNavigate} from "react-router-dom";
 import "./Nav.css";
 
+
 function Nav() {
-    const[show, handleShow]=useState(false);
+    const[show, handleShow]=useState(false); //use state is a way of defining variables in react (react hooks to rerender)
     const navigate =useNavigate();
 
+    //hide the nav bar when scrolling
     const transitionNavBar = () => {
         if (window.scrollY > 100){
             handleShow(true);
@@ -14,16 +16,16 @@ function Nav() {
         }
     }
 
-    useEffect(() => {
+    useEffect(() => { //react hook
         window.addEventListener("scroll", transitionNavBar)
         return() => window.removeEventListener("scroll", transitionNavBar)
 
     }, [])
 
+    //netflix logo and avatar images
   return (
     <div className= {`nav ${show && "nav_black"}`}>
         <div className = "nav_contents">
-
             <img
                 onClick={()=> navigate("/")}
                 className="nav_logo"
